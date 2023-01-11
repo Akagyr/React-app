@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import ErrorPage from "./common/ErrorPage/ErrorPage";
 
 function App() {
+
   return (
     <div>
       <Header />
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Posts />} />
           <Route path="/users" element={<Users />} />
-          {/* <Route path="/test" element={<ContentPreloader />} /> */}
+          {/* <Route path="/test" element={<Modal />} /> */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

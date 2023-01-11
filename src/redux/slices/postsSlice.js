@@ -15,6 +15,8 @@ const initialState = {
     items: [],
     showItems: [],
     statusApi: "",
+    currentPost: {},
+    isShowPostInfo: false
 }
 
 export const postsSlice = createSlice({
@@ -29,6 +31,13 @@ export const postsSlice = createSlice({
             state.endCountPosts += 3;
             const addItems = state.items.slice(state.startCountPosts, state.endCountPosts);
             state.showItems = state.showItems.concat(addItems);
+        },
+        openModalPostInfo: (state, action) => {
+            state.currentPost = state.showItems.find(item => item.id === action.payload);
+            state.isShowPostInfo = true;
+        },
+        closeModal: (state) => {
+            state.isShowPostInfo = false;
         }
     },
     extraReducers: {
@@ -47,7 +56,9 @@ export const postsSlice = createSlice({
 
 export const {
     showStartPosts,
-    showNextPosts
+    showNextPosts,
+    openModalPostInfo,
+    closeModal
 } = postsSlice.actions;
 
 export default postsSlice.reducer;

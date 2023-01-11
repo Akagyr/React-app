@@ -1,38 +1,38 @@
-button {
-    border: none;
-    background-color: #0478FF;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.articles_header {
+.posts__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.articles_header h1 {
+.posts__header h1 {
     font-weight: 500;
+    margin: 20px 0;
 }
 
-.articles_header button {
+.posts__header button {
     padding: 8px 12px;
     font-size: 14px;
 }
 
-.articles_header button:last-child {
+.posts__header button:last-child {
     margin-left: 5px;
 }
 
-.cards__small {
+.posts__header button,
+.showMore button {
+    background-color: #0478FF;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.cards--small {
     display: grid;
 
     grid-template-columns: 4fr 4fr 4fr;
     gap: 20px;
 }
 
-.cards__big {
+.cards--big {
     display: grid;
 
     grid-template-columns: 6fr 6fr;
@@ -40,7 +40,13 @@ button {
 }
 
 .error-info {
+    width: 200px;
     text-align: center;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
 }
 
 .showMore {
