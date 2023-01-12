@@ -19,8 +19,8 @@ const PostsCard = ({title, body, id}) => {
 
     return (
         <div id="card" className="card card--gray">
-                <h2 className="card__title" id="cardTitle">{title}</h2>
-                <p className="card__desc" id="cardText">{body}</p>
+            <h2 className="card__title" id="cardTitle">{title}</h2>
+            <p className="card__desc" id="cardText">{body}</p>
             <button onClick={() => dispatch(openModalPostInfo(id))}>View</button>
             <button onClick={() => dispatch(openModalPostEdit(id))}>Edit</button>
             <button onClick={() => dispatch(openModalPostDelete(id))}>Delete</button>

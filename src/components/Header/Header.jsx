@@ -1,14 +1,20 @@
 import "./Header.css";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
         <header className="header">
             <h1>React Example</h1>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/photos">Photos</Link>
+                <NavLink to="/" className={({ isActive }) =>
+                    isActive ? "active" : ''
+                }>Home</NavLink>
+                <NavLink to="/users" className={({ isActive }) =>
+                    isActive ? "active" : ''
+                }>Users</NavLink>
+                <NavLink to="/photos" className={({ isActive }) =>
+                    isActive ? "active" : ''
+                }>Photos</NavLink>
             </nav>
         </header>
     );
