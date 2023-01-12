@@ -1,9 +1,9 @@
-const PostModalInfo = ({title, text}) => {
+const ModalPostInfo = ({title, body}) => {
     return (
         <div className="modal__content">
             <h3>{title}</h3>
-            <p>{text}</p>
+            <p>{body}</p>
         </div>
     );
 }
-export default PostModalInfo;
+export default ModalPostInfo;

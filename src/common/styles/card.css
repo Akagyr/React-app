@@ -1,27 +1,37 @@
 .card {
     padding: 20px;
     border-radius: 4px;
+    overflow: hidden;
 }
 
-.card__gray {
+.card--gray {
     background-color: #ccc;
 }
 
-.card__yellow {
+.card--yellow {
     background-color: yellow;
 }
 
-.card__orange {
+.card--orange {
     background-color: orange;
 }
 
-.card h2 {
-    margin: 0;
+.card__title {
     font-weight: 500;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.card p {
+.card__desc {
     margin-top: 5px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .card button {

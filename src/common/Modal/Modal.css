@@ -1,5 +1,5 @@
 .modal {
-    width: 400px;
+    width: 500px;
     margin: auto;
     position: fixed;
     left: 50%;
@@ -7,6 +7,7 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 10px;
+    z-index: 100;
 }
 
 .modal__body {
@@ -32,4 +33,53 @@
 
 .modal__content h3 {
     text-align: center;
+}
+
+.modal__content form {
+    text-align: center;
+    margin: auto;
+}
+
+.modal__content input,
+.modal__content textarea {
+    border: none;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: auto;
+    outline: none;
+    width: 350px;
+    color: #000;
+}
+
+.modal__content input {
+    margin: 10px 0 20px;
+}
+
+.modal__content textarea {
+    resize: none;
+    height: 150px;
+}
+
+.groupBtn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal__content button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.modal__content button:last-child {
+    margin-left: 20px;
+}
+
+.greenBtn {
+    background-color: rgb(127, 255, 193);
+}
+
+.redBtn {
+    background-color: rgb(248, 66, 66);
 }

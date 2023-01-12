@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Users from "./components/Users/Users";
 import Header from "./components/Header/Header";
 import ErrorPage from "./common/ErrorPage/ErrorPage";
+// import Modal from "./common/Modal/Modal";
 
 function App() {
 

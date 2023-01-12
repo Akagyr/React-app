@@ -1,24 +1,24 @@
-.posts__header {
+.header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.posts__header h1 {
+.header__content h1 {
     font-weight: 500;
     margin: 20px 0;
 }
 
-.posts__header button {
+.header__content button {
     padding: 8px 12px;
     font-size: 14px;
 }
 
-.posts__header button:last-child {
+.header__content button:last-child {
     margin-left: 5px;
 }
 
-.posts__header button,
+.header__content button,
 .showMore button {
     background-color: #0478FF;
     color: #fff;
@@ -27,14 +27,12 @@
 
 .cards--small {
     display: grid;
-
     grid-template-columns: 4fr 4fr 4fr;
     gap: 20px;
 }
 
 .cards--big {
     display: grid;
-
     grid-template-columns: 6fr 6fr;
     gap: 20px;
 }
@@ -47,11 +45,12 @@
     border-radius: 5px;
     background-color: red;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .showMore {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .showMore button {

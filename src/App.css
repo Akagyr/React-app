@@ -13,6 +13,13 @@ button {
 }
 
 .container-wrapper {
-    width: 58%;
+    width: 59%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
