@@ -1,8 +1,8 @@
 import "../../../common/styles/card.css";
-import { useDispatch } from "react-redux/es/exports";
-import {openModalPostInfo, openModalPostEdit, openModalPostDelete} from "../../../redux/slices/postsSlice";
+import { useDispatch } from "react-redux";
+import {openModalPhotoInfo, openModalPhotoEdit, openModalPhotoDelete} from "../../../redux/slices/photosSlice";
 
-const PostsCard = ({title, body, id}) => {
+const PhotosCard = ({ id, title, url }) => {
 
     const dispatch = useDispatch();
 
@@ -21,13 +21,13 @@ const PostsCard = ({title, body, id}) => {
         <div id="card" className="card card--gray">
             <div className="card__info">
                 <h2 className="card__title">{title}</h2>
-                <p className="card__desc">{body}</p>
+                <img className="card__image" src={url} alt={url} />
             </div>
-            <button onClick={() => dispatch(openModalPostInfo(id))}>View</button>
-            <button onClick={() => dispatch(openModalPostEdit(id))}>Edit</button>
-            <button onClick={() => dispatch(openModalPostDelete(id))}>Delete</button>
+            <button onClick={() => dispatch(openModalPhotoInfo(id))}>View</button>
+            <button onClick={() => dispatch(openModalPhotoEdit(id))}>Edit</button>
+            <button onClick={() => dispatch(openModalPhotoDelete(id))}>Delete</button>
             <button onClick={(e) => changeColor(e)}>Change Color</button>
         </div>
     );
 }
-export default PostsCard;
+export default PhotosCard;

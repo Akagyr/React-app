@@ -58,6 +58,17 @@
     height: 150px;
 }
 
+.modal__content .photo__title {
+    text-align: center;
+}
+
+.modal__content img {
+    max-width: 450px;
+    max-height: 450px;
+    display: block;
+    margin: 20px auto;
+}
+
 .groupBtn {
     text-align: center;
     margin-top: 10px;

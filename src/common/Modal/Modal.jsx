@@ -2,6 +2,7 @@ import "./Modal.css";
 import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import { closeModalPost } from "../../redux/slices/postsSlice"
 import { closeModalUser } from "../../redux/slices/usersSlice"
+import { closeModalPhoto } from "../../redux/slices/photosSlice"
 
 const Modal = ({title, modalContent, dataType}) => {
 
@@ -13,7 +14,7 @@ const Modal = ({title, modalContent, dataType}) => {
         } else if (dataType === "users") {
             return closeModalUser();
         } else if (dataType === "photos") {
-            // return closeModalPhoto();
+            return closeModalPhoto();
         }
     }
 

@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Users from "./components/Users/Users";
 import Header from "./components/Header/Header";
 import ErrorPage from "./common/ErrorPage/ErrorPage";
-// import Modal from "./common/Modal/Modal";
+import Photos from "./components/Photos/Photos";
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Posts />} />
           <Route path="/users" element={<Users />} />
-          {/* <Route path="/test" element={<Modal />} /> */}
+          <Route path="/photos" element={<Photos />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

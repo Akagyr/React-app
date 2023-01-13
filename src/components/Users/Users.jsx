@@ -31,7 +31,7 @@ useEffect(() => {
 const showUsers = showItems.map(user => <UsersCard id={user.id} key={user.id} name={user.name} email={user.email} phone={user.phone} />);
 
 const userModalInfo = <ModalUserInfo name={currentUser.name} username={currentUser.username} email={currentUser.email} phone={currentUser.phone} website={currentUser.website} />
-const userModalAdd = <ModalUserAdd countUsers={items.length} />;
+const userModalAdd = <ModalUserAdd countUsers={items.length + showItems.length} />;
 const userModalEdit = <ModalUserEdit id={currentUser.id} name={currentUser.name} username={currentUser.username} email={currentUser.email} phone={currentUser.phone} website={currentUser.website} />;
 const userModalDelete = <ModalUserDelete id={currentUser.id} />;
 

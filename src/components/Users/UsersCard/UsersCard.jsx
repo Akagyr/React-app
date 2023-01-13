@@ -20,9 +20,9 @@ const UsersCard = ({id, name, email, phone}) => {
     return (
         <div id="card" className="card card--gray">
             <div className="card__info">
-                <h2 className="card__title" id="cardTitle">{name}</h2>
-                <p className="card__desc" id="cardText">{email}</p>
-                <p className="card__desc" id="cardText">{phone}</p>
+                <h2 className="card__title">{name}</h2>
+                <p className="card__desc">{email}</p>
+                <p className="card__desc">{phone}</p>
             </div>
             <button onClick={() => dispatch(openModalUserInfo(id))}>View</button>
             <button onClick={() => dispatch(openModalUserEdit(id))}>Edit</button>

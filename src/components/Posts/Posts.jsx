@@ -31,7 +31,7 @@ const Posts = () => {
     const showPosts = showItems.map(post => <PostsCard id={post.id} key={post.id} title={post.title} body={post.body} />);
 
     const postModalInfo = <ModalPostInfo title={currentPost.title} body={currentPost.body} />
-    const postModalAdd = <ModalPostAdd countPosts={items.length} />;
+    const postModalAdd = <ModalPostAdd countPosts={items.length + showItems.length} />;
     const postModalEdit = <ModalPostEdit id={currentPost.id} title={currentPost.title} body={currentPost.body} />;
     const postModalDelete = <ModalPostDelete id={currentPost.id} />;
 
