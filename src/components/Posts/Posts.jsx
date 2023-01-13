@@ -31,7 +31,7 @@ const Posts = () => {
     const showPosts = showItems.map(post => <PostsCard id={post.id} key={post.id} title={post.title} body={post.body} />);
 
     const postModalInfo = <ModalPostInfo title={currentPost.title} body={currentPost.body} />
-    const postModalAdd = <ModalPostAdd countPosts={showPosts.length + items.length} />;
+    const postModalAdd = <ModalPostAdd countPosts={items.length} />;
     const postModalEdit = <ModalPostEdit id={currentPost.id} title={currentPost.title} body={currentPost.body} />;
     const postModalDelete = <ModalPostDelete id={currentPost.id} />;
 
@@ -54,10 +54,10 @@ const Posts = () => {
     
     return (
         <div>
-            { isShowPostInfo && <Modal title={modalTitle} modalContent={postModalInfo} />}
-            { isShowPostAdd && <Modal title={modalTitle} modalContent={postModalAdd} />}
-            { isShowPostEdit && <Modal title={modalTitle} modalContent={postModalEdit} />}
-            { isShowPostDelete && <Modal title={modalTitle} modalContent={postModalDelete} />}
+            { isShowPostInfo && <Modal title={modalTitle} modalContent={postModalInfo} dataType="posts" />}
+            { isShowPostAdd && <Modal title={modalTitle} modalContent={postModalAdd} dataType="posts" />}
+            { isShowPostEdit && <Modal title={modalTitle} modalContent={postModalEdit} dataType="posts" />}
+            { isShowPostDelete && <Modal title={modalTitle} modalContent={postModalDelete} dataType="posts" />}
             <div className="header__content">
                 <h1>Article List</h1>
                 <div>

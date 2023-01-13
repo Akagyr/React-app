@@ -4,7 +4,7 @@ const ContentPreloader = () => {
     return (
         <div className="container">
             <div className="anim-block"></div>
-            <p>Loading...</p>
+            <p className="anim-text">Loading...</p>
         </div>
     );
 }

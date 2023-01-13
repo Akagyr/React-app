@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deletePost, closeModal } from "../../../redux/slices/postsSlice";
+import { deletePost, closeModalPost } from "../../../redux/slices/postsSlice";
 
 const ModalPostDelete = ({id}) => {
     const dispatch = useDispatch();
@@ -9,7 +9,7 @@ const ModalPostDelete = ({id}) => {
             <h3>Do you really want to delete this card?</h3>
             <div className="groupBtn">
                 <button className="greenBtn" onClick={() => dispatch(deletePost(id))}>Yes</button>
-                <button className="redBtn" onClick={() => dispatch(closeModal())}>No</button>
+                <button className="redBtn" onClick={() => dispatch(closeModalPost())}>No</button>
             </div>
         </div>
     );

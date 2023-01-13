@@ -13,7 +13,7 @@
 .modal__body {
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .2);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 20px 15px;
 }
 
 .modal__header {
@@ -32,7 +32,7 @@
 }
 
 .modal__content h3 {
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 .modal__content form {
@@ -47,13 +47,10 @@
     border-radius: 5px;
     padding: 8px 15px;
     margin: auto;
+    margin-top: 15px;
     outline: none;
     width: 350px;
     color: #000;
-}
-
-.modal__content input {
-    margin: 10px 0 20px;
 }
 
 .modal__content textarea {

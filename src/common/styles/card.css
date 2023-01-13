@@ -16,6 +16,10 @@
     background-color: orange;
 }
 
+.card__info {
+    margin-bottom: 15px;
+}
+
 .card__title {
     font-weight: 500;
     white-space: nowrap;
@@ -25,7 +29,7 @@
 }
 
 .card__desc {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -41,4 +45,9 @@
     border-radius: 0;
     padding: 4px;
     font-size: 12px;
+    transition: .3s;
+}
+
+.card button:hover {
+    background-color: #b1b1b1;
 }

@@ -43,7 +43,7 @@ export const postsSlice = createSlice({
         },
         openModalPostAdd: (state) => {
             state.isShowPostAdd = true;
-            state.modalTitle = "Add new post";
+            state.modalTitle = "Create new post";
         },
         addPost: (state, action) => {
             if (action.payload.title === "" || action.payload.body === "") {
@@ -74,7 +74,7 @@ export const postsSlice = createSlice({
             state.showItems = state.showItems.filter(item => item.id !== action.payload);
             state.isShowPostDelete = false;
         },
-        closeModal: (state) => {
+        closeModalPost: (state) => {
             state.isShowPostInfo = false;
             state.isShowPostAdd = false;
             state.isShowPostEdit = false;
@@ -105,7 +105,7 @@ export const {
     updatePost,
     openModalPostDelete,
     deletePost,
-    closeModal
+    closeModalPost
 } = postsSlice.actions;
 
 export default postsSlice.reducer;

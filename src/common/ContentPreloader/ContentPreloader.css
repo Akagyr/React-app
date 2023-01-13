@@ -11,6 +11,10 @@
     transform: rotate(0);
 }
 
+.anim-text {
+    margin-top: 10px;
+}
+
 @keyframes rotate {
     0% {
         background-color: #f3184b;

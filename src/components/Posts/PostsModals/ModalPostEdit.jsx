@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { updatePost, deletePost } from "../../../redux/slices/postsSlice";
+import { updatePost } from "../../../redux/slices/postsSlice";
 
 const ModalPostEdit = ({ id, title, body }) => {
     const dispatch = useDispatch();
